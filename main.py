@@ -1,14 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask (__name__)
 
 @app.route("/")
-def hello():
-    return"how are you"
+def home():
+    return render_template("index.html")
 
-@app.route("/home")
-def hello2():
-    return"how was your day"
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route('/home/<name>')
 def welcome_name(name):
