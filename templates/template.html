@@ -60,24 +60,24 @@
                                     <li><a href="{{url_for('about')}}">ABOUT</a></li>
                                     <li><a href="#">SERVICES</a>
                                         <ul class="sub-menu">
-                                            <li><a href="service.html">Service Page</a></li>
-                                            <li><a href="service-details.html">Service Details Page</a></li>
+                                            <li><a href="{{ url_for('service')}}">Service Page</a></li>
+                                            <li><a href="{{ url_for('servicedetails')}}">Service Details Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="gallery.html">GALLERY</a></li>
-                                    <li><a href="team.html">TEAM</a></li>
-                                    <li><a href="#">BLOG</a>
+                                    <li><a href="{{ url_for('gallery')}}">GALLERY</a></li>
+                                    <li><a href="{{ url_for('team')}}">TEAM</a></li>
+                                    <li><a href="">BLOG</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog page</a></li>
-                                            <li><a href="blog-details.html">Blog Details Page</a></li>
+                                            <li><a href="{{ url_for('blog')}}">Blog page</a></li>
+                                            <li><a href="{{ url_for('blogdetails')}}">Blog Details Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact-us.html">CONTACT</a></li>
+                                    <li><a href="{{ url_for('contact')}}">CONTACT</a></li>
                                 </ul>
                             </nav><!--// main-menu -->
-                            <div class="header-btn text-right">
+                            <!-- <div class="header-btn text-right">
                                 <a class="btn-circle btn-transparent btn" href="https://1.envato.market/62543">Buynow</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     
